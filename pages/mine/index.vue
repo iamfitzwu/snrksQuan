@@ -1,0 +1,16 @@
+<template>
+	<view class="mine">
+		<view>
+			<image src="../../static/logo.png"></image>
+			<view class="mine-info">
+				<text>帅哥</text>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+</script>
+
+<style>
+</style>
