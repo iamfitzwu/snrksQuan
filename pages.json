@@ -21,18 +21,27 @@
 		{
 			"path": "pages/mine/index",
 			"style": {
-				"navigationBarTitleText": "Sneakers圈"
+				"navigationBarBackgroundColor": "#1296db"
 			}
+		},
+		{
+			"path":"pages/mine/myPages",
+			"style":{}
+		},
+		{
+			"path":"pages/mine/myLikes",
+			"style":{}
+		},
+		{
+			"path":"pages/mine/notices",
+			"style":{}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "Sneakers圈",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"app-plus": {
-			"background": "#efeff4"
-		}
+		"backgroundColor": "#F8F8F8"
+
 	},
 	 "tabBar": {
 	        "color": "#000000",

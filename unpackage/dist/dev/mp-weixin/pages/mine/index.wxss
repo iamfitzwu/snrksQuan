@@ -1,0 +1,98 @@
+
+page {
+		background-color: #EDEDED;
+}
+.mine {
+		display: flex;
+	/* 	flex-direction: column; */
+		flex-wrap: wrap;
+		justify-content: center;
+}
+	/* 用户信息 */
+.wrapper {
+		width: 100%;
+		background-color:#1296db;
+		padding-left: 46rpx;
+		padding-right: 30rpx;
+		padding-bottom: 70rpx;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-top: 20rpx;
+		position:relative;
+		margin-bottom: 30rpx;
+}
+.avator {
+		width: 116rpx;
+		height: 116rpx;
+		flex-shrink: 0;
+		border:3px solid #fff;
+		border-radius: 50%;
+		margin-right: 30rpx;
+}
+.username {
+		margin-top: 10rpx;
+		font-size: 40rpx;
+		color: #1C1C1C;
+		position: relative;
+}
+.mine-go-to {
+		position: absolute;
+		right: 30rpx;
+		width: 14rpx;
+		height: 14rpx;
+		border-top: 4rpx solid #000000;
+		border-right: 4rpx solid #000000;
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
+}
+	/* 功能列表 */
+.mine-list {
+		width: 85%;
+		border:10rpx solid #ffffff;
+		border-radius: 25rpx;
+		margin-bottom: 30rpx;
+}
+.mine-item {
+		position: relative;
+		padding-left: 30rpx;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		background-color: white;
+		color: #111111;
+}
+.mine-item-icon {
+		width: 50rpx;
+		height: 50rpx;
+		margin-right: 30rpx;
+}
+.mine-item-title {
+		font-size: 32rpx;
+		width: 640rpx;
+		height: 108rpx;
+		line-height: 108rpx;
+}
+.mine-item-title-border {
+		border-bottom: 1rpx solid #f3f3f3;
+}
+.mine-item-go-to {
+		position: absolute;
+		top: 46rpx;
+		right: 30rpx;
+		width: 14rpx;
+		height: 14rpx;
+		border-top: 4rpx solid #ACACAC;
+		border-right: 4rpx solid #ACACAC;
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
+}
+.loginBtn {
+		  width: 85%;
+		  margin-top: 20rpx;
+		  background-color: #c5c5c5;
+		  color: white;
+		  border-radius: 98rpx;
+		  align-items: center;
+}
+
