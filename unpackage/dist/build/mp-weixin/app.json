@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/mainPage/index",
+    "pages/recovery/index",
+    "pages/shoes/index",
+    "pages/mine/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Sneakers圈",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/mainPage/index",
+        "iconPath": "static/images/tabBar/mainPage.png",
+        "selectedIconPath": "static/images/tabBar/mainPage1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/recovery/index",
+        "iconPath": "static/images/tabBar/recovery.png",
+        "selectedIconPath": "static/images/tabBar/recovery1.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/shoes/index",
+        "iconPath": "static/images/tabBar/shoes.png",
+        "selectedIconPath": "static/images/tabBar/shoes1.png",
+        "text": "球鞋"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/images/tabBar/mine.png",
+        "selectedIconPath": "static/images/tabBar/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

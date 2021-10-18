@@ -3,8 +3,13 @@ page {
 	background-color: #f8f8f8;
 }
 .likes{
+	display: -webkit-box;
+	display: -webkit-flex;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
 }
 

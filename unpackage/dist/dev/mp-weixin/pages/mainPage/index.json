@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "Sneakers圈",
-  "usingComponents": {}
+  "usingComponents": {
+    "tiezi": "/pages/mainPage/components/Tiezi"
+  }
 }
