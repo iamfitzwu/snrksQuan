@@ -1,0 +1,10 @@
+
+page {
+	background-color: #f8f8f8;
+}
+.likes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
