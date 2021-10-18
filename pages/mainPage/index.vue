@@ -107,4 +107,5 @@
 	.content{
 		display: flex;
 	}
+
 </style>

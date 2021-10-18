@@ -3,12 +3,14 @@
     "pages/mainPage/index",
     "pages/recovery/index",
     "pages/shoes/index",
-    "pages/mine/index"
+    "pages/mine/index",
+    "pages/mine/myPages",
+    "pages/mine/myLikes",
+    "pages/mine/notices"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Sneakers圈",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
@@ -48,6 +50,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

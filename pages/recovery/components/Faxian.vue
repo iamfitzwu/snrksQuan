@@ -29,7 +29,7 @@
 	.main{
 		width: 750rpx;
 		height: 180rpx;
-/* 		display: flex; */
+
 	}
 	.content-title{
 		border: 1px solid gray;
