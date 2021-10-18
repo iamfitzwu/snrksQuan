@@ -3,7 +3,7 @@
 		<view>
 			<image src="../../static/logo.png"></image>
 			<view class="mine-info">
-				<text>帅哥</text>
+				<text>aa</text>
 			</view>
 		</view>
 	</view>
