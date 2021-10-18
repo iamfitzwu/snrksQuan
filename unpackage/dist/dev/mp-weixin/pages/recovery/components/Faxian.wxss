@@ -2,9 +2,6 @@
 .main.data-v-3ae0b291{
 	width: 750rpx;
 	height: 180rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
 }
 .content-title.data-v-3ae0b291{
 	border: 1px solid gray;

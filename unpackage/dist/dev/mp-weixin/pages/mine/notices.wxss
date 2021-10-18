@@ -3,13 +3,8 @@ page {
 	background-color: #f8f8f8;
 }
 .notices{
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
