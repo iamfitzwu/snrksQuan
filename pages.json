@@ -35,6 +35,10 @@
 		{
 			"path":"pages/mine/notices",
 			"style":{}
+		},
+		{
+			"path":"pages/mainPage/a",
+			"style":{}
 		}
 	],
 	"globalStyle": {
