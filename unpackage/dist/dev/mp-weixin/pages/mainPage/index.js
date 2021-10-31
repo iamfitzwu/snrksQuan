@@ -135,8 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var Tiezi = function Tiezi() {__webpack_require__.e(/*! require.ensure | pages/mainPage/components/Tiezi */ "pages/mainPage/components/Tiezi").then((function () {return resolve(__webpack_require__(/*! ./components/Tiezi.vue */ 63));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var Tiezi = function Tiezi() {__webpack_require__.e(/*! require.ensure | pages/mainPage/components/Tiezi */ "pages/mainPage/components/Tiezi").then((function () {return resolve(__webpack_require__(/*! ./components/Tiezi.vue */ 73));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -204,9 +203,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
   },
+  methods: {
+    tiaozhuan: function tiaozhuan() {
+      uni.navigateTo({
+        url: './a' });
+
+      console.log('aaa');
+    } },
+
   onLoad: function onLoad() {
 
   } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 17 */
@@ -229,9 +237,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/Bishe/snrksQuan/pages/mainPage/index.vue?vue&type=style&index=0&id=0802cb24&scoped=true&lang=css& ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/src/index.js):\nSyntaxError\n\n(110:1) Unknown word\n\n  108 | \t\tdisplay: flex;\n  109 | \t}\n> 110 | <style>\n      | ^\n  111 | \n  112 | \n\n    at runLoaders (D:\\迅雷下载\\HBuilderX.2.8.6.20200814\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\webpack\\lib\\NormalModule.js:316:20)\n    at D:\\迅雷下载\\HBuilderX.2.8.6.20200814\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at D:\\迅雷下载\\HBuilderX.2.8.6.20200814\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (D:\\迅雷下载\\HBuilderX.2.8.6.20200814\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (D:\\迅雷下载\\HBuilderX.2.8.6.20200814\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\postcss-loader\\src\\index.js:207:9)\n    at <anonymous>");
+// extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
 
 /***/ })
 ],[[11,"common/runtime","common/vendor"]]]);

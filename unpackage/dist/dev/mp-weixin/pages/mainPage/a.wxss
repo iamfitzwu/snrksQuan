@@ -1,0 +1,22 @@
+
+.content-title.data-v-6e0e9f9a {
+	height: 100%;
+	border: 1px solid #E4E7ED;
+	border-radius: 30px 30px 30px 0;
+	background-color: #E4E7ED;
+	/* margin-bottom: 10px; */
+	/* display: inline; */
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	display: inline-block;
+	display: inline;
+	zoom: 1;
+}
+.main-img.data-v-6e0e9f9a {
+	width: 80rpx;
+	height: 80rpx;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
