@@ -13,7 +13,7 @@
 					>
 					<swiper-item v-for="(item,index) in img":key="index">
 						<view>
-							<image :src="item" mode=""></image>
+							<image :src="item" mode=""@click="tiaozhuan"></image>
 						</view>
 					</swiper-item>
 				</swiper>
@@ -31,8 +31,7 @@
 		<!-- 内容 -->
 		<view class="content">
 			<template>
-				<Tiezi>123123</Tiezi>
-				<Tiezi>123123</Tiezi>
+				<Tiezi ></Tiezi>
 			</template>
 		</view>
 	</view>
@@ -65,6 +64,14 @@
 					{title:'热门球鞋',icon:'../../static/daohang/鞋子.png'}
 				]
 				
+			}
+		},
+		methods:{
+			tiaozhuan(){
+				uni.navigateTo({
+					url:'./a'
+				})
+				console.log('aaa')
 			}
 		},
 		onLoad() {
@@ -105,7 +112,11 @@
 		margin: 0 auto;
 	}
 	.content{
+		/* background-color: #DCDFE6; */
 		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 </style>
