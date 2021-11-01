@@ -2,7 +2,7 @@
 .search.data-v-62f53582 {
 	width: 100%;
 	height: 88rpx;
-	background-color: #5196ff;
+	background-color: #FFFFFF;
 	box-sizing: border-box;
 	padding-top: 18rpx;
 	left: 0;
@@ -56,5 +56,9 @@
 	position: relative;
 	left: 75rpx;
 	bottom: 30rpx;
+}
+.right.data-v-62f53582 {
+	display: flex;
+	flex-direction: row;
 }
 

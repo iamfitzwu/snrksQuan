@@ -1,1 +1,1 @@
-<view class="pages"><image class="notFound" src="../../static/images/notFound.jpg"></image></view>
+<view class="pages data-v-2871d2b5"><block wx:for="{{Data}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="data-v-2871d2b5"><post-item vue-id="{{'346df61e-1-'+index}}" postItem="{{item}}" class="data-v-2871d2b5" bind:__l="__l"></post-item></view></block></view>

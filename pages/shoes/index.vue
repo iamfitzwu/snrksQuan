@@ -15,17 +15,16 @@
 								<view class="text-style">
 									<text :class="indexId===l.id?'active1':''">{{l.item}}</text>
 									<text :class="indexId===index?'active':''"></text>
-								</view>
 							</view>
+								</view>
 						</view>
 					</view>
 				</scroll-view>
 			</view>
 			<view class="right">
 				<scroll-view scroll-y="true">
-					<view>
-						{{contentList[contentId]}}
-					</view>
+					<shoes-item></shoes-item>
+					<shoes-item></shoes-item>
 				</scroll-view>
 			</view>
 		</view>
@@ -33,28 +32,32 @@
 </template>
 
 <script>
+	import shoesItem from '../../components/shoesItem.vue'
 	export default {
+		components:{
+			shoesItem
+		},
 		data() {
 			return {
 				lists: [{
 						id: '0',
-						item: '标题1'
+						item: '热门实战'
 					},
 					{
 						id: '1',
-						item: '标题2'
+						item: '热门休闲'
 					},
 					{
 						id: '2',
-						item: '标题3'
+						item: '高颜值出街'
 					},
 					{
 						id: '3',
-						item: '标题4'
+						item: '舒适压马路'
 					},
 					{
 						id: '4',
-						item: '标题5'
+						item: '日常休闲鞋'
 					},
 					{
 						id: '5',
@@ -82,7 +85,7 @@
 	.search {
 		width: 100%;
 		height: 88rpx;
-		background-color: #5196ff;
+		background-color: #FFFFFF;
 		box-sizing: border-box;
 		padding-top: 18rpx;
 		left: 0;
@@ -143,5 +146,9 @@
 		position: relative;
 		left: 75rpx;
 		bottom: 30rpx;
+	}
+	.right {
+		display: flex;
+		flex-direction: row;
 	}
 </style>

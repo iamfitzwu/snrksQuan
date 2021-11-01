@@ -1,10 +1,8 @@
 
-page {
-	background-color: #f8f8f8;
-}
-.likes{
+.like.data-v-2bfb2aa6{
+	background-color: #EDEDED;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
 }
 
