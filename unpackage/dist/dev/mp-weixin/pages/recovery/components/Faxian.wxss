@@ -2,8 +2,6 @@
 .main.data-v-3ae0b291{
 	width: 750rpx;
 	height: 150rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
 	margin-bottom: 15px;
 }
@@ -19,8 +17,6 @@
 	background-color:#DCDFE6;
 	/* margin-bottom: 10px; */
 	/* display: inline; */
-	display: -webkit-box;
-	display: -webkit-flex;
 	display: flex;
 	display:inline-block;
 	display:inline;

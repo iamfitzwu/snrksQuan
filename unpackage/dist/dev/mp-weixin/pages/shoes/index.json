@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "Sneakers圈",
-  "usingComponents": {}
+  "usingComponents": {
+    "shoes-item": "/components/shoesItem"
+  }
 }

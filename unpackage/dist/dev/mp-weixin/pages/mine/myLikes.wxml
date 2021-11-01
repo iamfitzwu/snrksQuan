@@ -1,1 +1,1 @@
-<view class="likes"><image class="notFound" src="../../static/images/notFound.jpg"></image></view>
+<view class="like data-v-2bfb2aa6"><block wx:for="{{Data}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="data-v-2bfb2aa6"><post-item vue-id="{{'564b6bf9-1-'+index}}" postItem="{{item}}" class="data-v-2bfb2aa6" bind:__l="__l"></post-item></view></block></view>

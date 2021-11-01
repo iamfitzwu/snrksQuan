@@ -1,0 +1,15 @@
+
+.shoesItem.data-v-7e06ddf0 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.shoesImg.data-v-7e06ddf0 {
+	width: 250rpx;
+	height: 250rpx;
+}
+.shoesName.data-v-7e06ddf0 {
+	font-size: 30rpx;
+	justify-content: center;
+}
+
