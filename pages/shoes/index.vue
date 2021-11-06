@@ -16,7 +16,7 @@
                 </view>
             </scroll-view>
             <scroll-view class="rightScroll" scroll-y scroll-with-animation style="height: calc(100vh);" >
-				<view v-if="array.length === 0">暂无数据</view>
+				<view v-if="array.length === 0">暂无数据...</view>
 				<view v-else>
 					<view v-for="(item,index) in array" :key="index">
 						<shoesItem :shoesItem="item"></shoesItem>
