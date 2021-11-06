@@ -23,7 +23,6 @@
 	color:#FFFFFF;
 	margin-left: 20rpx;
 }
-<<<<<<< HEAD
 .noticesNum.data-v-77883058 {
 	font-size: 40rpx;
 	color:#FFFFFF;
@@ -51,11 +50,5 @@
 .noticesContent.data-v-77883058 {
 	font-size: 40rpx;
 	color: #ACACAC;
-=======
-.notices{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
->>>>>>> bdcc0ec (2021.11.06)
 }
 

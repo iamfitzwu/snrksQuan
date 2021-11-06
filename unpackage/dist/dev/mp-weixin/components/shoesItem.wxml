@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 <view class="shoserow data-v-7e06ddf0"><view class="shoesItem data-v-7e06ddf0"><image class="shoesImg data-v-7e06ddf0" mode="aspectFill" src="../static/lunbotu/2.jpg"></image><text class="shoesName data-v-7e06ddf0">{{shoesItem.nameOne}}</text></view><view class="shoesItem data-v-7e06ddf0"><image class="shoesImg data-v-7e06ddf0" mode="aspectFill" src="../static/lunbotu/2.jpg"></image><text class="shoesName data-v-7e06ddf0">{{shoesItem.nameTwo}}</text></view></view>
-=======
-<view class="shoesItem data-v-7e06ddf0"><image class="shoesImg data-v-7e06ddf0" mode="aspectFill" src="../static/lunbotu/2.jpg"></image><text class="shoesName data-v-7e06ddf0">{{shoesItem.name}}</text></view>
->>>>>>> bdcc0ec (2021.11.06)

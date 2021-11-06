@@ -105,7 +105,7 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/mainPage/components/Tiezi":1,"pages/recovery/components/Faxian":1,"components/shoesItem":1,"components/postItem":1};
+/******/ 		var cssChunks = {"pages/mainPage/components/Tiezi":1,"pages/recovery/components/Faxian":1,"components/postItem":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {

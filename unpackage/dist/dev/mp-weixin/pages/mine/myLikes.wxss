@@ -1,17 +1,8 @@
 
-<<<<<<< HEAD
 .like.data-v-2bfb2aa6{
 	background-color: #EDEDED;
 	display: flex;
 	flex-direction: column;
-=======
-page {
-	background-color: #f8f8f8;
-}
-.likes{
-	display: flex;
-	flex-wrap: wrap;
->>>>>>> bdcc0ec (2021.11.06)
 	justify-content: center;
 }
 
