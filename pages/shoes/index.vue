@@ -1,154 +1,183 @@
 <template>
-	<view>
-		<!-- 搜索框 -->
+    <view class="page">
 		<view class="search">
-			<input class="search-box" placeholder="请输入你要搜索的内容" bindtap='goodsName' />
-			<image src="../../static/daohang/搜索.png" class="question-mark"></image>
+			 <input class="search-input" confirm-type="search" placeholder="请输入搜索内容" />
 		</view>
-		<!-- 左侧导航 -->
-		<view style="display: flex;justify-content: center;">
-			<view class="left" style="width: 100%;height: 100%;">
-				<scroll-view scroll-y="true" scroll-with-animation="true" class="scrollY" style="height: 2000rpx;">
-					<view>
-						<view v-for="l in lists" :key="l.id">
-							<view @click="jumpIndex" :id="l.id">
-								<view class="text-style">
-									<text :class="indexId===l.id?'active1':''">{{l.item}}</text>
-									<text :class="indexId===index?'active':''"></text>
-							</view>
-								</view>
-						</view>
+		
+        <!-- 菜单 -->
+        <view class="menu">
+            <scroll-view class="leftScroll" scroll-y scroll-with-animation style="height: calc(100vh);" >
+                <view 
+                :class="isActive==index?'itemLeftTwo':'itemLeft'" 
+                :style="" v-for="(item,index) in leftItems" 
+                :key="index" 
+                @click="chooseClick(index)">
+                {{item.val}}
+                </view>
+            </scroll-view>
+            <scroll-view class="rightScroll" scroll-y scroll-with-animation style="height: calc(100vh);" >
+				<view v-if="array.length === 0"></view>
+				<view v-else>
+					<view v-for="(item,index) in array" :key="index">
+						<shoesItem :shoesItem="item"></shoesItem>
 					</view>
-				</scroll-view>
-			</view>
-			<view class="right">
-				<scroll-view scroll-y="true">
-					<shoes-item></shoes-item>
-					<shoes-item></shoes-item>
-				</scroll-view>
-			</view>
-		</view>
-	</view>
+				</view>
+            </scroll-view>
+        </view>
+    </view>
 </template>
 
 <script>
 	import shoesItem from '../../components/shoesItem.vue'
 	export default {
-		components:{
+		components: {
 			shoesItem
 		},
 		data() {
 			return {
-				lists: [{
-						id: '0',
-						item: '热门实战'
+				isActive: 0,
+				leftItems:[
+				{val:'热门实战'},
+				{val:'热门休闲'},
+				{val:'高颜值出街'},
+				{val:'舒适压马路'},
+				{val:'日常休闲鞋'},
+				{val:'New Balance'},
+				{val:'AJ正代'},
+				{val:'LeBron系列'},
+				{val:'KD系列'},
+				{val:'Kobe系列'},
+				{val:'Nike球星款'},
+				{val:'adidas球星款'},
+				{val:'Jordan球星款'},
+				{val:'韦德之道系列'},
+				{val:'安踏系列'},
+				{val:'匹克系列'},
+				{val:'adidas团队'},
+				{val:'Nike团队'},
+				{val:'李宁团队款'},
+				{val:'Jordan团队'},
+				{val:'其他'}
+			  ],
+			  site:[
+				[
+					{
+						shoesImgOne: "",
+						nameOne:"aj4",
+						shoesImgTwo: "",
+						nameTwo: "aj5",
 					},
 					{
-						id: '1',
-						item: '热门休闲'
-					},
-					{
-						id: '2',
-						item: '高颜值出街'
-					},
-					{
-						id: '3',
-						item: '舒适压马路'
-					},
-					{
-						id: '4',
-						item: '日常休闲鞋'
-					},
-					{
-						id: '5',
-						item: '标题6'
+						shoesImgOne:"",
+						nameOne:"aj3",
+						shoesImgTwo: "",
+						nameTwo: "dd",
+
 					},
 				],
-				contentList: [
-					'1', '2', '3', '4', '5', '6'
-				],
-				indexId: 0,
-				contentId: 0
+				[
+					{	
+						shoesImgOne:"",
+						nameOne:"aj2",
+						shoesImgTwo: "",
+						nameTwo: "ss",
+					},
+					{
+						shoesImgOne:"",
+						nameOne:"aj1",
+						shoesImgTwo: "",
+						nameTwo: "aa",
+					},
+				]
+			  ],
+			  array:[]
 			}
 		},
-		methods: {
-			jumpIndex(e) {
-				let index = e.currentTarget.id;
-				this.indexId = index;
-				this.contentId = index;
-			}
-		},
-	}
+  created() {
+    // 初始化数据默认选中第一个
+    this.array = this.site[0];
+  },
+  methods: {
+    chooseClick(index) {
+      this.array = [];
+      this.isActive = index;
+	  if(index+1 > this.site.length) {
+		  this.array = [];
+	  } else {
+		  this.array = this.site[index];
+	  }
+    },
+  }
+}
 </script>
 
-<style scoped>
+<style  scoped>
+	.page {
+		
+	}
 	.search {
-		width: 100%;
-		height: 88rpx;
 		background-color: #FFFFFF;
-		box-sizing: border-box;
-		padding-top: 18rpx;
-		left: 0;
-		top: 0;
+		height: 90rpx;
+		padding-top: 3rpx;
 	}
-
-	.search-box {
-		width: 690rpx;
-		height: 57rpx;
-		margin-left: 30rpx;
-		background-color: #fff;
-		box-sizing: border-box;
-		padding-left: 60rpx;
-		border-radius: 57rpx;
-		font-size: 26rpx;
-	}
-
-	.question-mark {
-		width: 30rpx;
-		height: 30rpx;
-		position: absolute;
-		left: 45rpx;
-		top: 30rpx;
-	}
-
-	.scrollY {
-		width: 200rpx;
-		position: fixed;
-		left: 0;
-		/* top: 100rpx; */
-		border-right: 1rpx solid #efefef;
-	}
-
-	.left {
-		border-top: 1rpx solid #efefef;
-		border-right: 1rpx solid #efefef;
-	}
-
-	.text-style {
-		width: 200rpx;
-		height: 140rpx;
-		line-height: 140rpx;
+	.search-input {
+		border: #cfcfcf 1rpx solid;
+		border-radius: 10rpx;
+		height: 70rpx;
+		margin: 15rpx;
 		text-align: center;
-		font-size: 34rpx;
-		font-family: PingFangSC-Semibold;
-		color: rgba(51, 51, 51, 1);
 	}
+	.menu {
+		margin-top: 10rpx;
+		display: flex;
+		background-color:#f3f3f3 ;
+	}
+	.leftScroll {
+		font-size: 28rpx;
+		width: 40%;
+		background-color: #FFFFFF;
+		
+	}
+    .itemLeft {
+		width: 192rpx;
+		height: 100rpx;
+		line-height: 80rpx;
+		padding-left: 28rpx;
+		padding-top: 30rpx;
+		color: #333333;
+		background-color: #FFFFFF;
 
-	.active1 {
-		color: #85d1fd;
-	}
-
-	.active {
-		display: block;
-		width: 50rpx;
-		height: 6rpx;
-		background: #85d1fd;
-		position: relative;
-		left: 75rpx;
-		bottom: 30rpx;
-	}
-	.right {
+	}   
+    .itemLeftTwo {
+        width: 100%;
+        height: 100rpx;
+        line-height: 80rpx;
+        padding-left: 20rpx;
+		padding-top: 30rpx;
+        background-color: #f3f3f3;
+        color: #000000;
+        border-left: 6px solid #1296db;
+		font-weight: bold;
+    }    
+    .rightScroll {
 		display: flex;
 		flex-direction: row;
+        background-color: #FFFFFF;
+        width: 100%;
+		margin: 20rpx 20rpx 20rpx;
+		border-radius: 20rpx;
 	}
+    .bigConScro {
+        padding: 0 30rpx;
+	}
+    .topTitle {
+        margin-top: 20rpx;
+        font-size: 28rpx;
+        font-weight: 400;
+        color: #333333;
+    }
+        
+                
+
+
 </style>

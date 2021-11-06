@@ -130,11 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var shoesItem = function shoesItem() {__webpack_require__.e(/*! require.ensure | components/shoesItem */ "components/shoesItem").then((function () {return resolve(__webpack_require__(/*! ../../components/shoesItem.vue */ 106));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var shoesItem = function shoesItem() {__webpack_require__.e(/*! require.ensure | components/shoesItem */ "components/shoesItem").then((function () {return resolve(__webpack_require__(/*! ../../components/shoesItem.vue */ 88));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -171,43 +167,77 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
   data: function data() {
     return {
-      lists: [{
-        id: '0',
-        item: '热门实战' },
+      isActive: 0,
+      leftItems: [
+      { val: '热门实战' },
+      { val: '热门休闲' },
+      { val: '高颜值出街' },
+      { val: '舒适压马路' },
+      { val: '日常休闲鞋' },
+      { val: 'New Balance' },
+      { val: 'AJ正代' },
+      { val: 'LeBron系列' },
+      { val: 'KD系列' },
+      { val: 'Kobe系列' },
+      { val: 'Nike球星款' },
+      { val: 'adidas球星款' },
+      { val: 'Jordan球星款' },
+      { val: '韦德之道系列' },
+      { val: '安踏系列' },
+      { val: '匹克系列' },
+      { val: 'adidas团队' },
+      { val: 'Nike团队' },
+      { val: '李宁团队款' },
+      { val: 'Jordan团队' },
+      { val: '其他' }],
+
+      site: [
+      [
+      {
+        shoesImgOne: "",
+        nameOne: "aj4",
+        shoesImgTwo: "",
+        nameTwo: "aj5" },
 
       {
-        id: '1',
-        item: '热门休闲' },
+        shoesImgOne: "",
+        nameOne: "aj3",
+        shoesImgTwo: "",
+        nameTwo: "dd" }],
+
+
+
+      [
+      {
+        shoesImgOne: "",
+        nameOne: "aj2",
+        shoesImgTwo: "",
+        nameTwo: "ss" },
 
       {
-        id: '2',
-        item: '高颜值出街' },
-
-      {
-        id: '3',
-        item: '舒适压马路' },
-
-      {
-        id: '4',
-        item: '日常休闲鞋' },
-
-      {
-        id: '5',
-        item: '标题6' }],
+        shoesImgOne: "",
+        nameOne: "aj1",
+        shoesImgTwo: "",
+        nameTwo: "aa" }]],
 
 
-      contentList: [
-      '1', '2', '3', '4', '5', '6'],
 
-      indexId: 0,
-      contentId: 0 };
+      array: [] };
 
   },
+  created: function created() {
+    // 初始化数据默认选中第一个
+    this.array = this.site[0];
+  },
   methods: {
-    jumpIndex: function jumpIndex(e) {
-      var index = e.currentTarget.id;
-      this.indexId = index;
-      this.contentId = index;
+    chooseClick: function chooseClick(index) {
+      this.array = [];
+      this.isActive = index;
+      if (index + 1 > this.site.length) {
+        this.array = [];
+      } else {
+        this.array = this.site[index];
+      }
     } } };exports.default = _default;
 
 /***/ }),
