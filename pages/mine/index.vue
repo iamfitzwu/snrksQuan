@@ -71,7 +71,10 @@
 					
 					
 				});
-			
+
+				
+				
+				
 			},
 			// print(){
 			// 	console.log(this.userinfo)
