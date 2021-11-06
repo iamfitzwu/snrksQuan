@@ -1,0 +1,21 @@
+
+.shoserow.data-v-7e06ddf0 {
+	display: flex;
+	width: 100%;
+}
+.shoesItem.data-v-7e06ddf0 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10rpx;
+	margin-top: 18rpx;
+}
+.shoesImg.data-v-7e06ddf0 {
+	width: 230rpx;
+	height: 230rpx;
+}
+.shoesName.data-v-7e06ddf0 {
+	text-align: center;
+	font-size: 30rpx;
+	font-weight: 300;
+}
+
