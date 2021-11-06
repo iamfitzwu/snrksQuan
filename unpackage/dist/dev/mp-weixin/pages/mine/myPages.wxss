@@ -1,8 +1,17 @@
 
+<<<<<<< HEAD
 .pages.data-v-2871d2b5{
 	background-color: #EDEDED;
 	display: flex;
 	flex-direction: column;
+=======
+page {
+	background-color: #f8f8f8;
+}
+.pages{
+	display: flex;
+	flex-wrap: wrap;
+>>>>>>> bdcc0ec (2021.11.06)
 	justify-content: center;
 }
 
