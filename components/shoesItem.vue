@@ -1,22 +1,29 @@
 <template>
-	<view class="shoesItem">
-		<image class="shoesImg" mode="aspectFill" src="../static/lunbotu/2.jpg"></image>
-		<text class="shoesName">{{shoesItem.name}}</text>
+	<view class="shoserow">
+		<view class="shoesItem">
+			<image class="shoesImg" mode="aspectFill" src="../static/lunbotu/2.jpg"></image>
+			<text class="shoesName">{{shoesItem.nameOne}}</text>
+		</view>
+		<view class="shoesItem">
+			<image class="shoesImg" mode="aspectFill" src="../static/lunbotu/2.jpg"></image>
+			<text class="shoesName">{{shoesItem.nameTwo}}</text>
+		</view>
 	</view>
+
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-				shoesItem:{
-					shoesImg:"",
-					name:"aj4"
-				}
+				// shoesItem:{
+				// 	shoesImg:"",
+				// 	name:"aj4"
+				// }
 			};
 		},
 		props: {
-			postItem: {
+			shoesItem: {
 				type: Object
 			}
 		},
@@ -27,17 +34,23 @@
 </script>
 
 <style scoped>
+	.shoserow {
+		display: flex;
+	}
 	.shoesItem {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		margin-left: 13rpx;
+		margin-top: 18rpx;
+
 	}
 	.shoesImg {
-		width: 250rpx;
-		height: 250rpx;
+		width: 230rpx;
+		height: 220rpx;
 	}
 	.shoesName {
+		text-align: center;
 		font-size: 30rpx;
-		justify-content: center;
+		width: 180rpx;
 	}
 </style>
