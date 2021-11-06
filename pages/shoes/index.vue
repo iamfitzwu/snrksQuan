@@ -1,7 +1,7 @@
 <template>
     <view class="page">
 		<view class="search">
-			 <input class="search-input" confirm-type="search" placeholder="请输入搜索内容" />
+			 <input class="search-input" confirm-type="search"  placeholder="请输入搜索内容"/>	 
 		</view>
 		
         <!-- 菜单 -->
@@ -16,7 +16,7 @@
                 </view>
             </scroll-view>
             <scroll-view class="rightScroll" scroll-y scroll-with-animation style="height: calc(100vh);" >
-				<view v-if="array.length === 0"></view>
+				<view v-if="array.length === 0">暂无数据</view>
 				<view v-else>
 					<view v-for="(item,index) in array" :key="index">
 						<shoesItem :shoesItem="item"></shoesItem>
@@ -63,9 +63,9 @@
 				[
 					{
 						shoesImgOne: "",
-						nameOne:"aj4",
+						nameOne:"adidas trae young1",
 						shoesImgTwo: "",
-						nameTwo: "aj5",
+						nameTwo: "adidas trae young1",
 					},
 					{
 						shoesImgOne:"",

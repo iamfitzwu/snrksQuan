@@ -195,9 +195,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       [
       {
         shoesImgOne: "",
-        nameOne: "aj4",
+        nameOne: "adidas trae young1",
         shoesImgTwo: "",
-        nameTwo: "aj5" },
+        nameTwo: "adidas trae young1" },
 
       {
         shoesImgOne: "",
