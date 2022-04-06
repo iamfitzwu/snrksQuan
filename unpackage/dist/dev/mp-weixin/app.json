@@ -7,7 +7,12 @@
     "pages/mine/myPages",
     "pages/mine/myLikes",
     "pages/mine/notices",
-    "pages/mainPage/a"
+    "pages/mainPage/posts",
+    "pages/recovery/detail",
+    "pages/mainPage/evaluation",
+    "pages/mainPage/rankingList",
+    "pages/mainPage/publishPost",
+    "pages/mainPage/hotShoes"
   ],
   "subPackages": [],
   "window": {

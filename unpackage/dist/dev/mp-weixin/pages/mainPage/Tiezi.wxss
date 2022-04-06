@@ -1,0 +1,22 @@
+
+.main-content.data-v-2ee86f71 {
+	width: 355rpx;
+	height: 500rpx;
+	padding: 9rpx;
+	border: 1px solid #DCDFE6;
+	border-radius: 5px 5px 5px 5px;
+	background-color: white;
+}
+.main-img.data-v-2ee86f71 {
+	width: 50rpx;
+	height: 50rpx;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+.main-msg.data-v-2ee86f71 {
+	width: 355rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
