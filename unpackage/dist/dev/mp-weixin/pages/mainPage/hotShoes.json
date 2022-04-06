@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "video-player": "/pages/mainPage/videoPlayer",
+    "list-left": "/pages/mainPage/listLeft"
+  }
+}

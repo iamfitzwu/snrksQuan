@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Sneakers圈",
   "usingComponents": {
-    "faxian": "/pages/recovery/components/Faxian"
+    "faxian": "/pages/recovery/Faxian"
   }
 }

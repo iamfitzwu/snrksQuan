@@ -1,39 +1,42 @@
 
-swiper.data-v-0802cb24{
-	width: 750rpx;height: 422rpx ;
+swiper.data-v-0802cb24 {
+	width: 750rpx;
+	height: 422rpx;
 }
-swiper-item.data-v-0802cb24{
-	width: 750rpx;height: 422rpx !important;
+swiper-item.data-v-0802cb24 {
+	width: 750rpx;
+	height: 422rpx !important;
 }
 swiper swiper-item image.data-v-0802cb24 {
-	display: block;width: 750rpx;height: 422rpx !important;
+	display: block;
+	width: 750rpx;
+	height: 422rpx !important;
 }
-.navigator.data-v-0802cb24{
+.navigator.data-v-0802cb24 {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
-.content-img.data-v-0802cb24{
+.content-img.data-v-0802cb24 {
 	margin: 6px;
 	position: relative;
 	text-align: center;
 }
-.content-img text.data-v-0802cb24{
+.content-img text.data-v-0802cb24 {
 	padding-top: 20rpx;
 	font-size: 30rpx;
 	font-weight: bold;
 }
-.uploading.data-v-0802cb24{
+.uploading.data-v-0802cb24 {
 	display: block;
 	margin: 0 auto;
 }
-.content.data-v-0802cb24{
-	/* background-color: #DCDFE6; */
+.content.data-v-0802cb24 {
+	background-color: #DCDFE6;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
-
 

@@ -1,0 +1,35 @@
+
+.videoList{
+	height: 770px;
+	width: 100%;
+}
+.swiper-box{
+	height: 100%;
+	width: 100%;
+}
+.swiper{
+	height: 100%;
+	width: 100%;
+}
+.swiper-item{
+	height: 100%;
+	width: 100%;
+	z-index:19;
+}
+.title{
+	color: #FFFFFF;
+}
+ .listleftbox{
+	z-index:20;
+	position: absolute;
+	bottom: 50px;
+	left: 10px;
+}
+ .listrightbox{
+	z-index:20;
+	position: absolute;
+	bottom: 50px;
+	right: 10px;
+	color: #FFFFFF;
+}
+
