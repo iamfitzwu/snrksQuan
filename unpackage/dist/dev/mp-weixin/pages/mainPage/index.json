@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "Sneakers圈",
   "usingComponents": {
-    "tiezi": "/pages/mainPage/components/Tiezi"
+    "uni-fab": "/uni_modules/uni-fab/components/uni-fab/uni-fab",
+    "tiezi": "/pages/mainPage/Tiezi"
   }
 }

@@ -39,7 +39,8 @@
 			
 		</view>
 		
-			<button class="loginBtn" @click="getUser()">微信登录</button>
+			<button v-if="!userinfo.judgedeng" class="loginBtn" @click="getUser()">微信登录</button>
+			<button v-if="userinfo.judgedeng" class="loginBtn" @click="logout()">退出登录</button>
 		
 	</view>
 </template>
@@ -49,8 +50,9 @@
 		data() {
 			return{
 				userinfo:{
+					judgedeng:false,
 					avatarUrl:"../../static/images/mine/defAvatar.jpg",
-					nickName:"用户12345"
+					nickName:"用户12345",
 				},
 
 			}
@@ -63,6 +65,10 @@
 				    success: function (infoRes) {
 						console.log('用户昵称为：' + infoRes.userInfo.nickName);
 						that.userinfo=infoRes.userInfo;
+						that.userinfo.judgedeng = true;
+						that.$store.state.username = infoRes.userInfo.nickName;
+						that.$store.state.userimg = infoRes.userInfo.avatarUrl;
+						that.$store.state.judgedeng = true;
 						uni.showToast({
 						    title: '登陆成功',
 						    duration: 2000
@@ -71,10 +77,21 @@
 					
 					
 				});
-
-				
-				
-				
+			},
+			logout(){
+				let that = this;
+				uni.showModal({
+					title:"退出登录",
+					content:"退出之后无法享受部分权益",
+					success(res) {
+						if(res.confirm) {
+							that.userinfo.avatarUrl = "../../static/images/mine/defAvatar.jpg";
+							that.userinfo.nickName = "用户12345";
+							that.userinfo.judgedeng = false;
+							that.$store.state.judgedeng = false;
+						}
+					}
+				})
 			},
 			// print(){
 			// 	console.log(this.userinfo)

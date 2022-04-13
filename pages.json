@@ -38,7 +38,27 @@
 			"style":{}
 		},
 		{
-			"path":"pages/mainPage/a",
+			"path":"pages/mainPage/posts",
+			"style":{}
+		},
+		{
+			"path":"pages/recovery/detail",
+			"style":{}
+		},
+		{
+			"path":"pages/mainPage/evaluation",
+			"style":{}
+		},
+		{
+			"path":"pages/mainPage/rankingList",
+			"style":{}
+		},
+		{
+			"path":"pages/mainPage/publishPost",
+			"style":{}
+		},
+		{
+			"path":"pages/mainPage/hotShoes",
 			"style":{}
 		}
 	],

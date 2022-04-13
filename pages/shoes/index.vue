@@ -18,7 +18,7 @@
             <scroll-view class="rightScroll" scroll-y scroll-with-animation style="height: calc(100vh);" >
 				<view v-if="array.length === 0">暂无数据...</view>
 				<view v-else>
-					<view v-for="(item,index) in array" :key="index">
+					<view v-for="(item,index) in array" :key="index" @click="click()">
 						<shoesItem :shoesItem="item"></shoesItem>
 					</view>
 				</view>
@@ -66,6 +66,10 @@
 						nameOne:"adidas trae young1",
 						shoesImgTwo: "",
 						nameTwo: "adidas trae young1",
+						img:'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA1361dfc320f7a801e1a55b2fca5ae656.jpg?x-bce-process=image/watermark,image_NDU0ZjAyZDU5YjQ1LnBuZw==,bucket_searchbox,w_37,text_QHpiamJiYmJk,type_RlpMYW5UaW5nSGVp,size_37,x_25,y_25,interval_4,color_FFFFFF,effect_softoutline,shc_000000,blr_2,align_1',
+						msg:'这是adidas的一双实战写，外观很好看非常受大家欢迎',
+						title:'adidas trae young1',
+						rate:4.5
 					},
 					{
 						shoesImgOne:"",
@@ -107,6 +111,12 @@
 		  this.array = this.site[index];
 	  }
     },
+	click(){
+		let item = encodeURIComponent(JSON.stringify(this.site[0][0]));
+		uni.navigateTo({
+			url:'../recovery/detail?item='+item
+		})
+	},
   }
 }
 </script>

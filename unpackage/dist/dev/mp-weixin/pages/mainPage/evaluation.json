@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "post-item": "/components/postItem"
+  }
+}

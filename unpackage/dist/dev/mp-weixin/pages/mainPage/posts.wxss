@@ -1,0 +1,36 @@
+
+.content-title.data-v-9eda94b6 {
+	height: 100%;
+	border: 1px solid #E4E7ED;
+	border-radius: 30px 30px 30px 0;
+	background-color: #E4E7ED;
+	/* margin-bottom: 10px; */
+	/* display: inline; */
+	display: flex;
+	display: inline-block;
+	display: inline;
+	padding: 5px;
+	zoom: 1;
+}
+.main-img.data-v-9eda94b6 {
+	width: 90rpx;
+	height: 90rpx;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.bottom-area.data-v-9eda94b6 {
+	display: flex;
+	flex-direction: row;
+}
+.areaImg.data-v-9eda94b6 {
+	width: 50rpx;
+	height: 50rpx;
+}
+.areaNum.data-v-9eda94b6 {
+	font-size: 30rpx;
+	color: #ACACAC;
+	margin: 10rpx;
+	margin-right: 30rpx;
+}
+
