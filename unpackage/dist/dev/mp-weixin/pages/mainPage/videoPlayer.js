@@ -136,7 +136,11 @@ var timer = null;var _default =
     return {
       play: false,
       dblClick: false,
-      autoplay: false };
+      autoplay: false,
+      src: ["https://v-cdn.zjol.com.cn/276985.mp4",
+      "https://v-cdn.zjol.com.cn/276984.mp4",
+      "../../static/1.mp4"] };
+
 
   },
   mounted: function mounted() {

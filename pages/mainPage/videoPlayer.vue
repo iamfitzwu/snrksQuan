@@ -4,7 +4,7 @@
 		id="myVideo" 
 		class="video" 
 		:controls="false" 
-		src="https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg1.mp4"
+		:src="src[index]"
 		:loop="true" 
 		:autoplay="autoplay"
 		controls
@@ -20,7 +20,11 @@
 			return {
 				play:false,
 				dblClick:false,
-				autoplay:false
+				autoplay:false,
+				src:["https://v-cdn.zjol.com.cn/276985.mp4",
+				"https://v-cdn.zjol.com.cn/276984.mp4",
+				"../../static/1.mp4"
+				]
 			};
 		},
 		mounted(){

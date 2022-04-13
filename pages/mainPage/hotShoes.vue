@@ -32,7 +32,7 @@
 		},
 		data() {
 			return {
-				videos:["https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg1.mp4","https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg1.mp4"],
+				videos:["","",""],
 				pageStatrY:0,
 				pageEndY:0,
 				page:0

@@ -137,7 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _UniRate = function _UniRate() {__webpack_require__.e(/*! require.ensure | node-modules/@dcloudio/uni-ui/lib/uni-rate/uni-rate */ "node-modules/@dcloudio/uni-ui/lib/uni-rate/uni-rate").then((function () {return resolve(__webpack_require__(/*! @dcloudio/uni-ui/lib/uni-rate/uni-rate */ 191));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _UniRate = function _UniRate() {__webpack_require__.e(/*! require.ensure | node-modules/@dcloudio/uni-ui/lib/uni-rate/uni-rate */ "node-modules/@dcloudio/uni-ui/lib/uni-rate/uni-rate").then((function () {return resolve(__webpack_require__(/*! @dcloudio/uni-ui/lib/uni-rate/uni-rate */ 191));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -200,11 +200,34 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   components: { UniRate: _UniRate },
   data: function data() {
     return {
-      shoesItem: {
-        msg: 'Jordan第七代签名鞋，划时代产品，潮流界的热门鞋款，配置为后掌Aiursole气垫' } };
+      shoesItem1: {
+        img: 'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA4bd0d5709915845685b1f749937b1be0.jpg?x-bce-process=image/watermark,image_NDU0ZjAyZDU5YjQ1LnBuZw==,bucket_searchbox,w_21,text_QHpiamJiYmJk,type_RlpMYW5UaW5nSGVp,size_21,x_14,y_14,interval_4,color_FFFFFF,effect_softoutline,shc_000000,blr_2,align_1',
+        msg: '这是air jordan第四代，他的外观非常好看，受到很多年轻人得追捧，是当下年轻人最喜欢得一款球鞋',
+        title: 'Air Jordan 4',
+        rate: 4 },
+
+      shoesItem2: {
+        img: '../static/lunbotu/3.jpg',
+        msg: '这是air jordan第六代，他的外观非常好看，受到很多年轻人得追捧，是当下年轻人最喜欢得一款球鞋',
+        title: 'Air Jordan 6',
+        rate: 3 } };
 
 
-  } };exports.default = _default;
+  },
+  methods: {
+    click: function click() {
+      var item = encodeURIComponent(JSON.stringify(this.shoesItem1));
+      uni.navigateTo({
+        url: './detail?item=' + item });
+
+    },
+    click2: function click2() {
+      var item = encodeURIComponent(JSON.stringify(this.shoesItem2));
+      uni.navigateTo({
+        url: './detail?item=' + item });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

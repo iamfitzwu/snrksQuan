@@ -8,9 +8,6 @@
 			</view>
 		</view>
 		<!-- 文本框 -->
-		<view style="height: 100%;margin-bottom: 30px;background-color: #F5F5F5;">
-			<input type="text" v-model="a.username" placeholder="我的用户名是" />
-		</view>
 		<view style="height: 350rpx;width: 750rpx;background-color: #F5F5F5;margin-bottom: 30px;word-break:break-all">
 			<textarea v-model="a.content" placeholder="我想说的是...." >
 			</textarea>
@@ -23,10 +20,11 @@
 			@progress="progress" 
 			@success="success" 
 			@fail="fail"
-			:auto-upload="false"
-		/>
+			:auto-upload="false">
+			<!-- <image src="../../static/daohang/照相机1.png" mode="" style="width: 100%;height: 100%;"></image> -->
+		</uni-file-picker>
 		<view style="margin-top: 30px;">
-			<button type="default" style="background-color: #2979FF;" @click="run">提交按钮</button>
+			<button type="default" style="background-color: #2979FF;width: 500rpx;" @click="run">提交按钮</button>
 		</view>
 	</view>
 </template>
@@ -35,7 +33,11 @@
 		export default {
 			data() {
 				return {
-					a:{imglist:[]}
+					a:{
+						imglist:[],
+						username:this.$store.state.username,
+						userimg:this.$store.state.userimg,
+					}
 				}
 			},
 			methods:{

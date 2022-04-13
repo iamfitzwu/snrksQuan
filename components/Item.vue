@@ -38,14 +38,14 @@
 							<image src="../static/lunbotu/2.jpg" mode=""
 								style="border-radius: 50%;width: 100%;height: 100%;"></image>
 						</view>
-						<text>AJ air jordan 4</text>
+						<text @click="click()">AJ air jordan 4</text>
 					</view>
 					<view style="display: flex;margin: 10px;">
 						<view class="main-img">
 							<image src="../static/lunbotu/3.jpg" mode=""
 								style="border-radius: 50%;width: 100%;height: 100%;"></image>
 						</view>
-						<text>AJ air jordan 6</text>
+						<text @click="click2()">AJ air jordan 6</text>
 					</view>
 				</view>
 			</view>
@@ -61,9 +61,32 @@
 		components:{UniRate},
 		data(){
 			return{
-				shoesItem:{
-					msg:'Jordan第七代签名鞋，划时代产品，潮流界的热门鞋款，配置为后掌Aiursole气垫'
-				}
+				shoesItem1:{
+					img:'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA4bd0d5709915845685b1f749937b1be0.jpg?x-bce-process=image/watermark,image_NDU0ZjAyZDU5YjQ1LnBuZw==,bucket_searchbox,w_21,text_QHpiamJiYmJk,type_RlpMYW5UaW5nSGVp,size_21,x_14,y_14,interval_4,color_FFFFFF,effect_softoutline,shc_000000,blr_2,align_1',
+					msg:'这是air jordan第四代，他的外观非常好看，受到很多年轻人得追捧，是当下年轻人最喜欢得一款球鞋',
+					title:'Air Jordan 4',
+					rate:4
+				},
+				shoesItem2:{
+					img:'../static/lunbotu/3.jpg',
+					msg:'这是air jordan第六代，他的外观非常好看，受到很多年轻人得追捧，是当下年轻人最喜欢得一款球鞋',
+					title:'Air Jordan 6',
+					rate:3
+				},
+			}
+		},
+		methods:{
+			click(){
+				let item = encodeURIComponent(JSON.stringify(this.shoesItem1));
+				uni.navigateTo({
+					url:'./detail?item='+item
+				})
+			},
+			click2(){
+				let item = encodeURIComponent(JSON.stringify(this.shoesItem2));
+				uni.navigateTo({
+					url:'./detail?item='+item
+				})
 			}
 		}
 	}

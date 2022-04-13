@@ -1,1 +1,1 @@
-<view class="videoPlayer"><video class="video" id="myVideo" controls="{{true}}" src="https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg1.mp4" loop="{{true}}" autoplay="{{autoplay}}" data-event-opts="{{[['tap',[['click',['$event']]]]]}}" bindtap="__e"></video></view>
+<view class="videoPlayer"><video class="video" id="myVideo" controls="{{true}}" src="{{src[index]}}" loop="{{true}}" autoplay="{{autoplay}}" data-event-opts="{{[['tap',[['click',['$event']]]]]}}" bindtap="__e"></video></view>
