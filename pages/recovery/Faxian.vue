@@ -7,7 +7,7 @@
 			</view>
 			<view style="margin: 10px;">
 				<view class="content-title">
-					<image src="../../static/daohang/收藏2.png" mode="" style="width: 15px;height: 28rpx;margin-right: 3px;"></image>
+					<image src="../../static/daohang/收藏2.png" mode="" style="width: 15px;height: 28rpx;"></image>
 					<text style="font-size: 14px;">{{item.title}}</text>
 				</view>
 				<view class="content-msg"><text style="color: gray;">{{item.msg}}</text></view>
@@ -101,19 +101,19 @@
 		width: 750rpx;
 		height: 200rpx;
 		display: flex;
-		border-bottom:1px solid #e5e5e5;
+
 		margin-bottom: 15px;
 	}
 	.content-img{
-		width: 200rpx;
-		height: 150rpx;
+		width: 180rpx;
+		height: 180rpx;
 		margin: 10px;
 	}
 	.content-title{
 		height: 100%;
 		border: 1px solid #e6e9f0;
 		border-radius: 30px 30px 30px 0;
-		background-color:#e6e9f0;
+		background-color:#EDEDED;
 		/* margin-bottom: 10px; */
 		/* display: inline; */
 		display: flex;

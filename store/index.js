@@ -8,16 +8,18 @@ const store = new Vuex.Store({
 				userimg:'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA9772bf9f871e16ad4d035b0cb20a4b7c.jpg',
 				// img: 'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA9772bf9f871e16ad4d035b0cb20a4b7c.jpg',
 				content: '这是air jordan 第一代这是air jordan 第一代这是air jordan 第一代这是air jordan 第一代这是air jordan 第一代',
-				imglist:['https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA9772bf9f871e16ad4d035b0cb20a4b7c.jpg',
+				imglist:[
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA0ce0051c84fee73e38359bf1222392b4.jpg',
+				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA9772bf9f871e16ad4d035b0cb20a4b7c.jpg',
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aAa41652bb6f7828c15febdcb2b138663b.jpg',
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA63cba28c0f9633dd4a1c4a86f6dd782a.jpg']
 			},
 			{
 				username: 'llllll',
 				userimg:'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA36d1ef744e6220d77c9e97d36e796aec.jpg',
-				imglist: ['https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA36d1ef744e6220d77c9e97d36e796aec.jpg',
+				imglist: [
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aAfc5f17808ea1c702c66b07d1b70ec41a.jpg',
+				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA36d1ef744e6220d77c9e97d36e796aec.jpg',
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aAd02258c197627ed73d365afbbfab2b1f.jpg',
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aAf44a479a0f2fe2dfecc20f7c8489cad5.jpg',
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA1308e0af8aa4b7a566de0a251fac933c.jpg',
@@ -33,16 +35,18 @@ const store = new Vuex.Store({
 			{
 				username: 'zzzz',
 				userimg:'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA591c10f215742a1f6377d123299ebcd0.jpg',
-				imglist: ['https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA591c10f215742a1f6377d123299ebcd0.jpg',
+				imglist: [
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA36be017655661b023f802aa748af3b39.jpg',
+				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA591c10f215742a1f6377d123299ebcd0.jpg',
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aAc5b19541acee65f7b39333029bd0612b.jpg',],
 				content: '史上最好看的李宁篮球鞋，是大家都可以入手的价格'
 			},
 			{
 				username: '球鞋玩家',
 				userimg:'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA37b504556d42af5b49ffe19bb7cee602.jpg',
-				imglist: ['https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA37b504556d42af5b49ffe19bb7cee602.jpg',
+				imglist: [
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA7afd7a10e2ccae0799bdb10f96e72756.jpg',
+				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA37b504556d42af5b49ffe19bb7cee602.jpg',
 				'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aAaeff25b167a6c098681e69aa913d5ecd.jpg',
 				],
 				content: '性价比不太高的一双球鞋，但是实战好到爆炸'

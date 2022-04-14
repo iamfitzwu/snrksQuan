@@ -24,7 +24,7 @@
 			<!-- <image src="../../static/daohang/照相机1.png" mode="" style="width: 100%;height: 100%;"></image> -->
 		</uni-file-picker>
 		<view style="margin-top: 30px;">
-			<button type="default" style="background-color: #2979FF;width: 500rpx;" @click="run">提交按钮</button>
+			<button type="default" style="background-color: #1296db;width: 500rpx;" @click="run">提交发布</button>
 		</view>
 	</view>
 </template>

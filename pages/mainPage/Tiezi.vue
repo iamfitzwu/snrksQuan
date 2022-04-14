@@ -1,7 +1,7 @@
 <template>
-	<view style="display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between;" >
-		<view v-for="(item,index) in tz" :key="index" class="main-content" @click="tiaozhuan(index)">
-			<image :src="item.imglist[0]" mode="" style="max-width: 355rpx;max-height: 355rpx;"></image>
+	<view style=" display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between; background-color: #EDEDED;padding-left: 20rpx;padding-right: 20rpx" >
+		<view v-for="(item,index) in tz" :key="index" class="main-content" @click="tiaozhuan(index)" style="margin-top: 20rpx;">
+			<image :src="item.imglist[0]" mode="aspectFill" style="max-width: 330rpx;max-height: 330rpx;"></image>
 			<view class="main-msg">
 				<text style="font-size: 18px;">{{item.content}}</text>
 			</view>
@@ -42,11 +42,14 @@
 </script>
 
 <style scoped>
+	page {
+		background-color: #EDEDED;
+	}
 	.main-content {
-		width: 355rpx;
+		width: 330rpx;
 		height: 500rpx;
 		padding: 9rpx;
-		border: 1px solid #DCDFE6;
+
 		border-radius: 5px 5px 5px 5px;
 		background-color: white;
 	}
@@ -59,7 +62,8 @@
 	}
 
 	.main-msg {
-		width: 355rpx;
+		padding: 5rpx;
+		width: 330rpx;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;

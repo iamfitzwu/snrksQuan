@@ -72,7 +72,7 @@
 						rate:4.5
 					},
 					{
-						shoesImgOne:"",
+						shoesImgOne:"https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA9772bf9f871e16ad4d035b0cb20a4b7c.jpg'",
 						nameOne:"aj3",
 						shoesImgTwo: "",
 						nameTwo: "dd",
@@ -81,7 +81,7 @@
 				],
 				[
 					{	
-						shoesImgOne:"",
+						shoesImgOne:"https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA9772bf9f871e16ad4d035b0cb20a4b7c.jpg'",
 						nameOne:"aj2",
 						shoesImgTwo: "",
 						nameTwo: "ss",
