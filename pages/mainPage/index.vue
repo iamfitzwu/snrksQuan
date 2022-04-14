@@ -37,6 +37,7 @@
 			@fabClick="publishpost"
 			 />
 		</view>
+		
 	</view>
 </template>
 
@@ -91,19 +92,28 @@
 		},
 		methods: {
 			publishpost(e) {
-				uni.showModal({
-					content:'分享内容',
-					success(res) {
-						if (res.confirm) {
-							uni.navigateTo({
-								url: './publishPost'
-							});
-							
-						} else if (res.cancel) {
-							console.log('用户点击取消');
+				if(!this.$store.state.judgedeng) {
+					uni.showModal({
+						content:'用户还未登录，无法进行发帖功能',
+						showCancel:false
+					})
+				}
+				else {
+					uni.showModal({
+						content:'分享内容',
+						success(res) {
+							if (res.confirm) {
+								uni.navigateTo({
+									url: './publishPost'
+								});
+								
+							} else if (res.cancel) {
+								console.log('用户点击取消');
+							}
 						}
-					}
-				});
+					})
+				}
+				
 			},
 			lableClick(index) {
 				// console.log(index)

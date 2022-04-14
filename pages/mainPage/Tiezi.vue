@@ -8,7 +8,7 @@
 			<view style="display: flex;align-items: center;justify-content: space-between;margin-top: 10px;">
 				<view style="display: flex;">
 					<view class="main-img">
-						<image :src="item.imglist[0]" mode="" style="border-radius: 50%;width: 100%;height: 100%;"></image>
+						<image :src="item.userimg" mode="" style="border-radius: 50%;width: 100%;height: 100%;"></image>
 					</view>
 					<text style="font-size: 18px;color: #808080;">{{item.username}}</text>
 				</view>

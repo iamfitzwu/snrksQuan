@@ -11,7 +11,7 @@
 		<view style="margin: 10px;background-color: #fafafa;height:100%">
 			<view style="display: flex;">
 				<view class="main-img">
-					<image :src="user.imglist[0]" mode="" style="border-radius: 10%;width: 100%;height: 100%;"></image>
+					<image :src="user.userimg" mode="" style="border-radius: 10%;width: 100%;height: 100%;"></image>
 				</view>
 				<view style="display: flex;flex-direction:column">
 					<text style="font-size: 20px;">{{user.username}}</text>
