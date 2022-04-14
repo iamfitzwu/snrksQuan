@@ -28,19 +28,19 @@
 				Data: [
 					{
 						name: "yonghu1234",
-						content: "你好ssssssssssssss",
+						content: "给您点了赞",
 						imgUrl: "222222222",
 						
 					},
 					{
 						name: "yonghu",
-						content: "在吗？saaaa",
+						content: "给您的帖子评论了",
 						imgUrl: "222222222",
 
 					},
 					{
 						name: "aksudg",
-						content: "dddddddddc",
+						content: "给您点了赞",
 						imgUrl: "222222222",
 
 					}

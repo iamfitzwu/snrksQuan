@@ -4,32 +4,32 @@
 			<text style="color: #f3f3f3;width: 750rpx;word-wrap: break-word;margin: 10px;">{{shoes.msg}}</text>
 			<h3 style="color: #FFFFFF;font-weight: bold;margin-top: 20px;margin-left: 10px;">球鞋评分</h3>
 			<view class="" style="display: flex;justify-content: space-between;flex-wrap: wrap;margin: 10px;">
-				<view style="display: flex;"> 
+				<view style="display: flex;padding: 10rpx;"> 
 					<text>综合</text>
-					<view
-						style="background-color:#007AFF;width: 180rpx;height: 75rpx;margin-left: 20px;line-height: 75rpx;text-align: center;">
+					<view class="" 
+						style="background-color:#1296db;width: 180rpx;height:80rpx;margin-left: 18px;line-height: 75rpx;text-align: center;">
 						<text style="font-size: 50rpx;font-weight: bold;">{{shoes.rate}}</text>
 					</view>
 				</view>
-				<view class="" style="display: flex;text-align: center;">
+				<view class="staring" style="display: flex;text-align: center;">
 					<text style="margin-right: 10px;">透气</text>
-					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#00aaff" />
+					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#1296db" />
 				</view>
-				<view class="" style="display: flex;text-align: center;">
+				<view class="staring" style="display: flex;text-align: center;">
 					<text style="margin-right: 10px;">耐磨</text>
-					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#00aaff" />
+					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#1296db" />
 				</view>
-				<view class="" style="display: flex;text-align: center;">
+				<view class="staring" style="display: flex;text-align: center;">
 					<text style="margin-right: 10px;">启动</text>
-					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#00aaff" />
+					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#1296db" />
 				</view>
-				<view class="" style="display: flex;text-align: center;">
+				<view class="staring" style="display: flex;text-align: center;">
 					<text style="margin-right: 10px;">缓震</text>
-					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#00aaff" />
+					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#1296db" />
 				</view>
-				<view class="" style="display: flex;text-align: center;">
+				<view class="staring" style="display: flex;text-align: center;">
 					<text style="margin-right: 10px;">包裹</text>
-					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#00aaff" />
+					<uni-rate allow-half :value="shoes.rate" size="18" activeColor="#1296db" />
 				</view>
 				<view class="" style="width: 630rpx;margin:30px;background-color:#30333C;border: 1px solid #30333C;">
 					<text>与其他相近产品的参数对比</text>
@@ -93,6 +93,10 @@
 </script>
 
 <style scoped>
+	.staring{
+		
+		margin:10rpx;
+	}
 	.content {
 		background-color: #363942;
 		width: 750rpx;

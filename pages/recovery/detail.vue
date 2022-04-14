@@ -101,6 +101,7 @@
 		height: 500rpx;
 		background-size: 750rpx 500rpx;
 		position: relative;
+		background-image: url({{shoes.img}});
 	}
 
 	.headtext {

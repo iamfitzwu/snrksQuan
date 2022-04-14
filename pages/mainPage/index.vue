@@ -1,26 +1,23 @@
 <template>
-	<view>
+	<view class="mainPage">
 		<!-- 头部轮播图 -->
-		<view class="page-section swiper">
-			<view>
-				<swiper :indicator-dots="indicatorDots" :indicator-color="indicatorColor"
+		<view class="page-section">
+			<swiper :indicator-dots="indicatorDots" :indicator-color="indicatorColor"
 					:indicator-active-color="indicatorActiveColor" :autoplay="autoplay" :interval="interval"
 					:duration="duration">
 					<swiper-item v-for="(item,index) in img" :key="index">
-						<view>
 							<image :src="item" mode=""></image>
-						</view>
 					</swiper-item>
 				</swiper>
-			</view>
+
 		</view>
 		<!-- 导航栏 -->
 		<view class="navigator">
 			<view v-for="(item,index) in label" :key="index">
 				<view class="content-img" @click="lableClick(index)">
-					<image class="uploading" :src="item.icon" mode="widthFix" style="width: 60rpx;height: 60rpx;">
+					<image class="uploading" mode="widthFix" :src="item.icon" style="width: 100rpx;height: 60rpx;ma">
 					</image>
-					<text>{{item.title}}</text>
+					{{item.title}}
 				</view>
 			</view>
 		</view>
@@ -56,7 +53,7 @@
 					color: 'gray',
 					backgroundColor: '#FFFFFF',
 					selectedColor: '#007AFF',
-					buttonColor:'skyblue'
+					buttonColor:'#1296db'
 				},
 				indicatorDots: true,
 				autoplay: true,
@@ -65,9 +62,11 @@
 				indicatorColor: "#292b40",
 				indicatorActiveColor: "#ffffff",
 				img: [
-					'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA9772bf9f871e16ad4d035b0cb20a4b7c.jpg',
-					'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA36d1ef744e6220d77c9e97d36e796aec.jpg',
-					'https://b0.bdstatic.com/ugc/ldmIk_-6MctywU-vwEh5aA9772bf9f871e16ad4d035b0cb20a4b7c.jpg'
+					'https://s2.loli.net/2022/04/14/iysS6GXMNEwzOpa.jpg',
+					'https://s2.loli.net/2022/04/14/lNgZ2Ymp9XnbjMe.jpg',
+					'https://s2.loli.net/2022/04/14/yF7Hjdh6UIt9pX1.jpg',
+					'https://s2.loli.net/2022/04/14/A8Xhf1uHcyUqCpr.jpg'
+
 				],
 				//导航栏数组
 				label: [{
@@ -76,15 +75,16 @@
 					},
 					{
 						title: '实战测评',
-						icon: '../../static/daohang/篮球.png'
+						icon: '../../static/daohang/实战测评.png'
+					},
+
+					{
+						title: '球鞋推荐',
+						icon: '../../static/daohang/尺子笔.png'
 					},
 					{
-						title: '球鞋对比',
-						icon: '../../static/daohang/对比.png'
-					},
-					{
-						title: '热门球鞋',
-						icon: '../../static/daohang/鞋子.png'
+						title: '热门视频',
+						icon: '../../static/daohang/热门.png'
 					}
 				]
 
@@ -140,27 +140,49 @@
 </script>
 
 <style scoped>
+	page {
+		background-color: #EDEDED;
+	}
+	.mainPage{
+		display: flex;
+	/* 	flex-direction: column; */
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: #EDEDED;
+
+	}
+	.page-section{
+		width: 100%;
+		height: 480rpx;
+		background-color: #EDEDED;
+		padding: 30rpx;
+	}
 	swiper {
-		width: 750rpx;
-		height: 422rpx;
+		height: 500rpx;
+		
 	}
-
-	swiper-item {
-		width: 750rpx;
-		height: 422rpx !important;
-	}
-
 	swiper swiper-item image {
+
+		width: 100%;
+		height: 100%;
 		display: block;
-		width: 750rpx;
-		height: 422rpx !important;
+		
+		border-radius: 5%;
+
+
+		
 	}
 
 	.navigator {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+		margin-top: 20rpx;
+		background-color: white;
+		width: 100%;
+		height: 180rpx;
+		
 	}
 
 	.content-img {
@@ -180,11 +202,13 @@
 		margin: 0 auto;
 	}
 
-	.content {
+/* 	.content {
+		margin-top: 20rpx;
 		background-color: #DCDFE6;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
-	}
+	} */
+
 </style>

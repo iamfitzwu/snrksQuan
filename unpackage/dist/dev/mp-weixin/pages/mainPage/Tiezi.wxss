@@ -1,9 +1,12 @@
 
+page.data-v-2ee86f71 {
+	background-color: #EDEDED;
+}
 .main-content.data-v-2ee86f71 {
-	width: 355rpx;
+	width: 330rpx;
 	height: 500rpx;
 	padding: 9rpx;
-	border: 1px solid #DCDFE6;
+
 	border-radius: 5px 5px 5px 5px;
 	background-color: white;
 }
@@ -14,7 +17,8 @@
 	border-radius: 50%;
 }
 .main-msg.data-v-2ee86f71 {
-	width: 355rpx;
+	padding: 5rpx;
+	width: 330rpx;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
