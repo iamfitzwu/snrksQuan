@@ -36,14 +36,13 @@
     "packNpmRelationList": [],
     "minifyWXSS": true,
     "disableUseStrict": false,
-    "minifyWXML": true,
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
     "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "wxced282dbab9bcac8",
+  "appid": "wx430f6dd662fef408",
   "projectname": "snrksquan",
   "condition": {
     "search": {
